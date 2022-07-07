@@ -1,21 +1,28 @@
 #mainContainer {
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-columns: 800px auto 400px;
+  grid-template-rows: 800px auto 400px;
   grid-template-areas:
     "hero"
     "main"
     "footer";
 }
-
+/* ------------------------------HERO-------------------------------------- */
 .hero {
   grid-area: hero;
+  width: 100%;
+  background-image: url(../assets/narutoCover.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
+/* ----------------------------------MAIN--------------------------------------- */
 .main {
   grid-area: main;
 }
-
+/* --------------------------------------FOOTER------------------------------------- */
 .footer {
   grid-area: footer;
 }
