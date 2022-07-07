@@ -16,7 +16,7 @@ window.onload = function () {
           const listElem = document.createElement("div");
           const listImg = document.createElement("img");
           listImg.src = element.images.webp.image_url;
-          listElem.className = "listImg";
+          listElem.className = "listElem";
           const elemTitle = document.createElement("h6");
           elemTitle.innerText = element.title_english;
 
@@ -31,8 +31,12 @@ window.onload = function () {
       const listElem = document.createElement("div");
       const listImg = document.createElement("img");
       listImg.src = element.images.webp.image_url;
+      const elemTitle = document.createElement("h6");
+      elemTitle.innerText = element.title_english;
+
       movieList.appendChild(listElem);
       listElem.appendChild(listImg);
+      listElem.appendChild(elemTitle);
     });
   };
   initialElements();
