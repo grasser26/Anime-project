@@ -133,20 +133,42 @@ header {
   background-color: black;
 }
 
-ul {
+.footer ul {
   display: flex;
   flex-direction: row;
-
-  color: white;
 }
-ul > li {
+.footer ul > li {
   padding: 20px;
+  color: white;
 }
 .footer img {
   width: 150px;
   height: 100px;
 }
-p {
+.footer p {
   color: white;
+  font-size: 10px;
   align-self: flex-end;
+}
+footer h3 {
+  z-index: 10;
+  color: white;
+}
+
+.footer form {
+  display: flex;
+}
+.footer input {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+*:focus {
+  outline: none;
+}
+.footer button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
 }
