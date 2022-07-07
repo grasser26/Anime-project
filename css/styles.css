@@ -81,4 +81,26 @@ header {
 /* --------------------------------------FOOTER------------------------------------- */
 .footer {
   grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+}
+ul > li {
+  padding: 20px;
+}
+.footer img {
+  width: 150px;
+  height: 100px;
+}
+p {
+  color: white;
+  align-self: flex-end;
 }
