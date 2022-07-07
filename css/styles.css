@@ -1,0 +1,21 @@
+#mainContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 800px auto 400px;
+  grid-template-areas:
+    "hero"
+    "main"
+    "footer";
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
