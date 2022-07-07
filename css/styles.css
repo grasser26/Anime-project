@@ -78,6 +78,7 @@ header {
 .main {
   grid-area: main;
 }
+
 /* --------------------------------------FOOTER------------------------------------- */
 .footer {
   grid-area: footer;
