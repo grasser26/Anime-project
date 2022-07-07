@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-y: hidden;
+}
 #mainContainer {
   width: 100vw;
   height: 100vh;
@@ -9,15 +13,67 @@
     "main"
     "footer";
 }
+
+#mainContainer li:hover {
+  color: rgb(249, 244, 244);
+  transition: 0.15s;
+  cursor: pointer;
+}
 /* ------------------------------HERO-------------------------------------- */
 .hero {
   grid-area: hero;
   width: 100%;
   background-image: url(../assets/narutoCover.webp);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+.headerLeft img {
+  width: 150px;
+}
+.headerLeft ul {
+  display: flex;
+  gap: 25px;
+  color: rgb(219, 214, 214);
+  list-style: none;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: rgb(219, 214, 214);
+  padding: 0 30px 0 0;
+}
+
+.headerRight button {
+  padding: 10px;
+  background-color: rgb(255, 0, 58);
+  border: none;
+  border-radius: 10%;
+  color: rgb(219, 214, 214);
+  font-weight: 600;
+  font-size: 15px;
+}
+.headerRight p:hover {
+  color: rgb(239, 234, 234);
+  transition: 0.15s;
+}
+.headerRight button:hover {
+  color: rgb(239, 234, 234);
+  transition: 0.15s;
+}
 /* ----------------------------------MAIN--------------------------------------- */
 .main {
   grid-area: main;
